@@ -11,7 +11,7 @@
 .home-hero {
     width: 100%;
     min-height: 800px;
-    background-position: center bottom 10%;
+    background-position: center;
     background-repeat: no-repeat;
     background-image: url('/res/images/banner.jpg');
     background-size: cover;
