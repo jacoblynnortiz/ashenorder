@@ -109,7 +109,7 @@ playPause.addEventListener('click', () => {
 nextSong.addEventListener('click', playNext);
 
 function playNext() {
-    if (currentSongUUID < 3) {
+    if (currentSongUUID < 12) {
         currentSongUUID = currentSongUUID = parseInt(currentSongUUID + 1);
         assemblePlayer(currentSongUUID);
     }
@@ -155,9 +155,9 @@ function updateTrackTime() {
 }
 
 function formatSecondsAsTime(secs, format) {
-    var hr = Math.floor(secs / 3600);
-    var min = Math.floor((secs - (hr * 3600)) / 60);
-    var sec = Math.floor(secs - (hr * 3600) - (min * 60));
+    let hr = Math.floor(secs / 3600);
+    let min = Math.floor((secs - (hr * 3600)) / 60);
+    let sec = Math.floor(secs - (hr * 3600) - (min * 60));
 
     if (hr < 10) { hr = "0" + hr; }
     if (min < 10) { min = "0" + min; }
@@ -165,7 +165,7 @@ function formatSecondsAsTime(secs, format) {
     if (hr) { hr = "00"; }
 
     if (format != null) {
-        var formatted_time = format.replace('hh', hr);
+        let formatted_time = format.replace('hh', hr);
         formatted_time = formatted_time.replace('h', hr * 1 + ""); // check for single hour formatting
         formatted_time = formatted_time.replace('mm', min);
         formatted_time = formatted_time.replace('m', min * 1 + ""); // check for single minute formatting

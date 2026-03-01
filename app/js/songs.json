@@ -18,5 +18,50 @@
         "uuid": 3,
         "songName": "White monster can",
         "albumCover": "https://iili.io/qq2apQs.jpg"
+    },
+    {
+        "uuid": 4,
+        "songName": "Arcanum",
+        "albumCover": "https://iili.io/qqR7rbt.jpg"
+    },
+    {
+        "uuid": 5,
+        "songName": "Augurium",
+        "albumCover": "https://iili.io/qqR7rbt.jpg"
+    },
+    {
+        "uuid": 6,
+        "songName": "Fatum",
+        "albumCover": "https://iili.io/qqR7rbt.jpg"
+    },
+    {
+        "uuid": 7,
+        "songName": "Lumen",
+        "albumCover": "https://iili.io/qqR7rbt.jpg"
+    },
+    {
+        "uuid": 8,
+        "songName": "Orbis",
+        "albumCover": "https://iili.io/qqR7rbt.jpg"
+    },
+    {
+        "uuid": 9,
+        "songName": "Orbuculum",
+        "albumCover": "https://iili.io/qqR7rbt.jpg"
+    },
+    {
+        "uuid": 10,
+        "songName": "Sphaera",
+        "albumCover": "https://iili.io/qqR7rbt.jpg"
+    },
+    {
+        "uuid": 11,
+        "songName": "Umbra",
+        "albumCover": "https://iili.io/qqR7rbt.jpg"
+    },
+    {
+        "uuid": 12,
+        "songName": "Visio",
+        "albumCover": "https://iili.io/qqR7rbt.jpg"
     }
 ]
