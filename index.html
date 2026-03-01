@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashen Order</title>
+    <link rel="stylesheet" href="res/images/branding/logo-circle.png">
+
+    <link rel="stylesheet" href="app/css/components/globals.css">
+    <link rel="stylesheet" href="app/css/components/header_styles.css">
+    <link rel="stylesheet" href="app/css/components/footer_styles.css">
+    <link rel="stylesheet" href="app/css/components/mediaplayer_styles.css">
+
+    <link rel="stylesheet" href="app/css/home_styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <img class="logo" src="res/images/branding/logo-transparent.png" alt="">
+            <button class="hamburger" id="openMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    <div class="side-nav" id="sideNav">
+        <button class="close-btn" id="closeMenuBtn">
+            <i class="fa-solid fa-x"></i>
+        </button>
+    </div>
+
+    <div id="mediaPlayer" class="media-player">
+        <h2>Ashen Order</h2>
+        <div class="song-details">
+            <div id="albumCover" class="album-cover"></div>
+            <span id="songName">Song name</span>
+        </div>
+        <div class="media-controller">
+            <div>
+                <button id="prevSong"><i class="fa-solid fa-backward-step"></i></button>
+                <button id="playPause"><i class="fa-solid fa-play"></i></button>
+                <button id="nextSong"><i class="fa-solid fa-forward-step"></i></button>
+            </div>
+            <div>
+                <span id="currentTime">--:--</span>
+                <input type="range" value="0" id="progress">
+                <span id="duration">--:--</span>
+            </div>
+        </div>
+        <div class="volume-slider">
+            <span id="volumeIcon"><i class="fa-solid fa-volume-high"></i></span>
+            <input type="range" value="100" name="" id="mediaVolume">
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="home-hero">
+            <h2>Ashen Order</h2>
+            <ul>
+                <li>Johnson</li>
+                <li>Ortiz</li>
+                <li>Horn</li>
+                <li>Scantling</li>
+            </ul>
+            <input placeholder="Enter Song UUID" type="text" id="songUUID">
+            <button id="songUUIDBtn">Enter</button>
+            <audio style="display: none;" id="audio" controls>
+                <source id="source" src="" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="stream-links">
+                <a href="https://open.spotify.com/artist/2v007MNCWMcnBT5bwDoZrg?si=zEXF6U6vR1GMzmphyB4c8A"><img
+                        src="res/images/platforms/spotify.png" alt="#"></a>
+                <a href="https://music.apple.com/ca/artist/ashen-order/1878931986"><img
+                        src="res/images/platforms/apple-music.png" alt="#"></a>
+                <a href="https://music.youtube.com/channel/UCeEUBrEVDRq3KCN5a-bGpiA"><img
+                        src="res/images/platforms/youtube-music.png" alt="#"></a>
+                <a href="https://www.pandora.com/artist/ashen-order/ARgZgfznZprvPZ6"><img
+                        src="res/images/platforms/pandora.png" alt="#"></a>
+                <a href="https://soundcloud.com/ashenorder"><img src="res/images/platforms/soundcloud.png" alt="#"></a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <h2>Ashen Order</h2>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+    <script src="app/js/main.js"></script>
+
+    <script src="app/js/components/mediaPlayer.js"></script>
+</body>
+
+</html>

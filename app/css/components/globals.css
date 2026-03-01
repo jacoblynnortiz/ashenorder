@@ -1,0 +1,96 @@
+:root {
+
+    /* Website Color Scheme */
+
+    --primary-color: #333;
+    --secondary-color: #131313;
+    --accent-color: #ec9137;
+
+	--headerForeground-color: #c0c0c0;
+	--headerForegroundHover-color: #fff;
+
+    --foregroundDark-color: #000;
+    --foregroundLight-color: #fff;
+    --backgroundDark-color: #000;
+    --backgroundLight-color: #fff;
+
+    /* Variables for sizing */
+
+    --roundedCorners: 1rem;
+
+    --normalTextSize: 1.1rem;
+	--headerTextSize: 1rem;
+	--socialMediaSize: 1.6rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	line-height: 1.4;
+	text-decoration: none;
+	list-style: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	animation: fadeInAnimation ease 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	overflow-x: hidden;
+	/* off white background shows on sides of content if screen is over 1080p */
+    background-color: #000;
+}
+
+/* main container for content of page */
+
+.content {
+    width: 100%;
+    max-width: 2560px;
+    min-height: 100vh;
+    margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* fade in animation for page */
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Scrollbar Styling */
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #2c2f33;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #171515;
+	border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #171515;
+}
