@@ -1,5 +1,5 @@
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     margin: 0 auto;
@@ -75,7 +75,7 @@
     max-width: 350px;
     height: 100%;
     background-color: #00000080;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -350px;
     z-index: 11;
